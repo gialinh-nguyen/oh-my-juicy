@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	margin: 0 auto;
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: Muli;
+	cursor: url("../images/1-15.png"), auto;
+}
+
+nav ul li a {color: white !important}
+nav ul li a:hover
+{color:rgba(148,240,255,1.00) !important}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	color: white !important;
+	background:rgba(148,240,255,1.00) !important;
+}
+.nav-doc{
+	top: 50% !important;
+	
+}
+.nav-doc .nav-link{
+	background: transparent !important;
+	padding-top:0;
+	padding-bottom:0;
+	width: 50%;
+	transition: all 0.2s;
+	text-align:left;
+}
+.nav-doc .nav-link hr{
+	height: 2px;
+	background:rgba(255,0,90,1.00);
+}
+.nav-doc .nav-pills .nav-link.active, .nav-pills .show>.nav-link hr{
+	color: white;
+	background-color: none !important;
+	width: 100px;
+}
+
+.nav-icon{
+	top: 80% !important;
+	float: right !important;
+	width: 90%
+}
+.home{
+	width: 100%;
+	height: 100vh;
+	background:url("../images/web page-12.png");
+	background-repeat: no-repeat;
+	background-size:100%;
+	
+	background-attachment: fixed;
+}
+.home img
+{width: 60%;
+ margin-top: 15%;
+}
+.home button.btn
+{border-radius: 50px !important}
+
+.home1{
+	width: 100%;
+	height: 100vh;
+	background:url("../images/web page-08.png");
+	background-repeat: no-repeat;
+	background-size:100%;
+	background-attachment: fixed;
+}
+.home1 img
+{animation: rotateInUpLeft;
+ animation-duration: 2s;
+animation-iteration-count: 5;
+ }
+.home1 button.btn
+{border-radius: 50px !important}
+
+.home2{
+	width: 100%;
+	height: 100vh;
+	background:url("../images/web page-11.png");
+	background-repeat: no-repeat;
+	background-size:100%;
+	
+	background-attachment: fixed;
+}
+.home2 h2
+{padding-top: 20% !important}
+.home3{
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size:100%;
+	
+	background-attachment: fixed;
+}
+.home3 button.btn
+{border-radius: 50px !important}
+
+.home4{
+	width: 100%;
+	height: 100vh;
+	background:url("../images/webpage-06.png");
+	background-repeat: no-repeat;
+	background-size:100%;
+	
+	background-attachment: fixed;
+}
+.home4 img
+{width: 40%;
+margin-top: 10%;
+animation: flash;
+animation-duration: 2s;
+animation-iteration-count: infinite;}
+
+.home5
+{
+	width: 100%;
+	height: 100vh;
+	background:url("../images/webpage-07.png");
+	background-repeat: no-repeat;
+	background-size:100%;
+	
+	background-attachment: fixed;
+}
+.home5 img
+{margin-top: 10%;
+animation: heartBeat;
+animation-duration: 2s;
+animation-iteration-count: infinite;}
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.cursor
+{
+	width: 60px;
+	height: 60px;
+	border: 5px solid rgba(253,176,0,1.00);
+	border-radius: 50%;
+	position: absolute;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+	animation: cursorAnim .5s infinite alternate;
+}
+.cursor::after
+{
+	content:"";
+	width: 60px;
+	height: 60px;
+	border: 8px solid rgba(39,222,146,1.00);
+	border-radius: 50%;
+	position: absolute;
+	opacity: 0.5;
+	top: -5px;
+	left: -5px;
+	animation: cursorAnim2 .5s infinite alternate;
+}
+.expand 
+{
+	animation: cursorAnim3 .5s forwards;
+	border: 3px solid red;
+}
+@keyframes cursorAnim
+{
+	from{transform: scale(1);}
+	to{transform: scale(.7);}
+}
+
+@keyframes cursorAnim2
+{
+	from{transform: scale(1);}
+	to{transform: scale(.4);}
+}
+
+@keyframes cursorAnim3
+{
+	0% {transform: scale(1);}
+	50% {transform: scale(3);}
+	100% {transform: scale(1); opacity: 0}
+}
